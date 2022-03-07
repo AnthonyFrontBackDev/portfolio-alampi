@@ -1,0 +1,342 @@
+
+/*----------Desktop Queries-------------------*/
+@media screen and (min-width: 900px) and (max-width:1075px){
+    /*Titre du header*/
+    .headerTop .mainTitle{
+        font-size: 1.5rem;
+    }
+}
+
+/*-----------tablette Queries---------------*/
+@media screen and (max-width: 900px) {
+
+    /*MENU HAMBURGER A INTEGRER*/
+
+    .navbar .listItems .item{
+        padding: 0 10px;
+    }
+    .headerTop .navbar .listItems .item .link{
+        font-size: 1rem;
+    }
+    .headerTop .mainTitle {
+        font-size: 1.4rem;
+    }
+    .presentation{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .profilDigital .presentation .profilParagraphe{
+        width: 100%;
+        font-size: 17px;
+    }
+    .profilDigital .presentation .profilPicture{
+        margin-top: 20px;
+        width: 220px;
+        height: 220px;
+    }
+    /*---Lignes d'animations--*/
+    .lineA{
+        width: 200px;
+
+    }
+    .lineB{
+        width: 130px;
+
+    }
+/*Lignes inférieur droite*/
+
+    .lineC{
+        width: 130px;
+    }
+    .lineD{
+        width: 200px;
+    }
+
+    .profilDigital .content-title{
+        font-size: 1.2rem;
+    }
+    .technologies .content-title{
+        font-size: 1.2rem;
+    }
+    .portfolio .content-title{
+        font-size: 1.2rem;
+    }
+    .profilDigital .titleRetrospective{
+        font-size: 1.2rem;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .profilDigital .content-cards .card_queries_tablet{
+        height: 360px;
+        width: 190px;
+    }
+    .content-cards .cardPicture{
+        width: 150px;
+        height: 110px;
+    }
+
+    .technologies .containerSecondaire{
+        height: 30%;
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;    
+        flex-direction: column;
+        margin: 10px;
+    }
+
+
+    .containerGrid{
+        margin-bottom: 10%;
+        margin-top: 20vh;
+        max-width: auto;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 200px);
+        justify-content: center;
+        gap: 30px;
+    }
+    .containerGrid .card{
+        width: 200px;
+        height: 130px;
+    }
+    .card .websitePicture{
+        width: 200px;
+        height: 130px;
+    }
+}
+
+/*-----Mobile media_Queries-------*/
+@media screen and (max-width: 571px) {
+    .navbar{
+        display: none;
+    }
+  
+    .headerTop .mainTitle {
+        font-size: 1.2rem;
+        word-break: break-all;
+    }
+    .presentation{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .profilDigital .presentation .profilParagraphe{
+        width: 100%;
+        font-size: 17px;
+    }
+    .profilDigital .presentation .profilPicture{
+        margin-top: 20px;
+        width: 220px;
+        height: 220px;
+    }
+    /*---Lignes d'animations--*/
+    .lineA{
+        width: 200px;
+
+    }
+    .lineB{
+        width: 130px;
+
+    }
+/*Lignes inférieur droite*/
+
+    .lineC{
+        width: 130px;
+    }
+    .lineD{
+        width: 200px;
+    }
+
+    .profilDigital .content-title{
+        font-size: 1.2rem;
+    }
+    .technologies .content-title{
+        font-size: 1.2rem;
+    }
+    .portfolio .content-title{
+        font-size: 1.2rem;
+    }
+    .profilDigital .titleRetrospective{
+        font-size: 1.2rem;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .profilDigital .content-cards .card_queries_mobile{
+        height: 360px;
+        width: 190px;
+    }
+    .content-cards .cardPicture{
+        width: 150px;
+        height: 110px;
+    }
+
+    .technologies .containerSecondaire{
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: space-between;    
+        margin: 10px;
+    }
+
+
+    .containerGrid{
+        margin-bottom: 10%;
+        margin-top: 20vh;
+        max-width: auto;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 200px);
+        justify-content: center;
+        gap: 30px;
+    }
+    .containerGrid .card{
+        width: 200px;
+        height: 130px;
+    }
+    .card .websitePicture{
+        width: 200px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 501px) {
+    .navbar{
+        display: none;
+    }
+  
+    .headerTop .mainTitle {
+        font-size: 17px;
+        word-break: break-all;
+    }
+    .presentation{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .profilDigital .presentation .profilParagraphe{
+        width: 100%;
+        font-size: 17px;
+    }
+    .profilDigital .presentation .profilPicture{
+        margin-top: 20px;
+        width: 220px;
+        height: 220px;
+    }
+    /*---Lignes d'animations--*/
+    .lineA{
+        width: 150px;
+
+    }
+    .lineB{
+        width: 80px;
+
+    }
+/*Lignes inférieur droite*/
+
+    .lineC{
+        width: 80px;
+    }
+    .lineD{
+        width: 150px;
+    }
+
+    .profilDigital .content-title{
+        font-size: 1rem;
+    }
+    .technologies .content-title{
+        font-size: 1rem;
+    }
+    .portfolio .content-title{
+        font-size: 1rem;
+    }
+    .profilDigital .titleRetrospective{
+        font-size: 1rem;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .profilDigital .content-cards .card_queries_mobile{
+        height: 360px;
+        width: 190px;
+    }
+    .content-cards .cardPicture{
+        width: 150px;
+        height: 110px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .navbar{
+        display: none;
+    }
+  
+    .headerTop .mainTitle {
+        font-size: 11.5px;
+        word-break: break-all;
+    }
+    .presentation{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .profilDigital .presentation .profilParagraphe{
+        width: 100%;
+        font-size: 17px;
+    }
+    .profilDigital .presentation .profilPicture{
+        margin-top: 20px;
+        width: 220px;
+        height: 220px;
+    }
+    /*---Lignes d'animations--*/
+    .lineA{
+        width: 120px;
+
+    }
+    .lineB{
+        width: 50px;
+
+    }
+/*Lignes inférieur droite*/
+
+    .lineC{
+        width: 50px;
+    }
+    .lineD{
+        width: 120px;
+    }
+
+    .profilDigital .content-title{
+        font-size: 0.8rem;
+    }
+    .technologies .content-title{
+        font-size: 0.8rem;
+    }
+    .portfolio .content-title{
+        font-size: 0.8rem;
+    }
+    .profilDigital .titleRetrospective{
+        font-size: 0.8rem;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .profilDigital .content-cards .card_queries_mobile{
+        height: 360px;
+        width: 190px;
+    }
+    .content-cards .cardPicture{
+        width: 150px;
+        height: 110px;
+    }
+}
