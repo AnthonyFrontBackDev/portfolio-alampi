@@ -1,0 +1,667 @@
+/*Font text,links*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+:root {
+  --color-text: #fff;
+  --family-text: "roboto";
+  --color-link: rgb(255, 255, 255);
+  --color-titles: #fff;
+  --size-link: 20px;
+  --size-title-header: 10px;
+  --title-shadow: 5px 6px 1px black;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  background: rgb(37, 37, 37);
+}
+
+.headerTop {
+  height: 100vh;
+  background: rgb(82, 82, 82);
+  background-image: url("pictures/sol.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.headerTop .navbar {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  z-index: 999;
+}
+/*--------Links---------*/
+.navbar .listItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
+}
+.navbar .listItems .item:first-child {
+  margin-right: auto;
+}
+
+.navbar .listItems .item {
+  list-style-type: none;
+  padding: 0 30px;
+}
+.navbar .listItems .item .linkLogo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  text-shadow: 1px 4px 3px black;
+}
+.navbar .listItems .item .link {
+  text-decoration: none;
+  font-size: var(--size-link);
+  color: var(--color-link);
+  font-weight: bold;
+  text-shadow: 2px 2px 1px black;
+}
+.navbar .listItems .item .link:hover {
+  color: rgb(152, 192, 152);
+}
+/*classe ligne d'animation sous les links*/
+.lineEffect {
+  border-bottom: solid 1px #fff;
+}
+
+/*--------------------- Les lignes d'animations------*/
+/* Lignes supérieur gauche à animer en JS*/
+.headerTop .lineContentSup {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+.lineA {
+  width: 250px;
+  height: 3px;
+  background-color: #f1f1f1f1;
+  border-radius: 5px;
+}
+.lineB {
+  width: 180px;
+  height: 3px;
+  background-color: #f1f1f1f1;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+/*Lignes inférieur droite à animer en JS*/
+
+.headerTop .lineContentInf {
+  position: absolute;
+  top: 80%;
+  right: 5%;
+}
+.lineC {
+  width: 180px;
+  height: 3px;
+  background-color: #f1f1f1f1;
+  border-radius: 5px;
+  margin-left: 70px;
+}
+.lineD {
+  width: 250px;
+  height: 3px;
+  background-color: #f1f1f1f1;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+/*---------------------Les titres principaux x3--*/
+.headerTop .mainTitle {
+  position: absolute;
+  word-break: break-all;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  font-family: "Black Ops One", cursive;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 0.7px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  /* text-shadow: 2px 5px 1px black; */
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15%;
+  /* right: 15%; */
+  width: 60%;
+  /* height: auto; */
+  /*Appliquer media queries*/
+}
+/*----------- Icone Chevron à animer en JS-----*/
+.headerTop .arrowsScroll {
+  position: absolute;
+  top: 89%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid 2px rgb(255, 255, 255);
+  padding: 10px 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/*------------------------Main Page-------------------------------*/
+
+/*---Section Profil Digital -Line EF - présentation - Experiences-----*/
+
+.profilDigital {
+  height: auto;
+  padding-bottom: 10vh;
+}
+
+/* Lignes supérieur gauche à animer en JS*/
+.profilDigital .lineContentSup1 {
+  position: absolute;
+  top: 110vh;
+  left: 5%;
+}
+.lineE {
+  width: 250px;
+  height: 3px;
+  background-color: #f1f1f1f1;
+  border-radius: 5px;
+}
+.lineF {
+  width: 180px;
+  height: 3px;
+  background-color: #f1f1f1f1;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+/*/////////*/
+
+.profilDigital .content-title {
+  margin-top: 20vh;
+  margin-left: 15%;
+  font-size: 25px;
+  color: var(--color-titles);
+  text-shadow: var(--title-shadow);
+  letter-spacing: 3px;
+  font-family: "Black Ops One", cursive;
+}
+
+.profilDigital .presentation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5%;
+  padding: 50px;
+}
+
+.profilDigital .presentation .profilParagraphe {
+  font-family: var(--family-text);
+  color: var(--color-text);
+  font-size: 30px;
+  width: 50%;
+  word-break: keep-all;
+  /*appliquer media queries*/
+}
+.profilDigital .presentation .profilPicture {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+}
+
+.profilDigital .titleRetrospective {
+  /* width: 80%;
+    margin-top: 14%;
+    margin-bottom: 5%;    
+    margin-left: 15%; */
+  /* //margin-right: auto; */
+  /* //padding: 20px; */
+  /* color: var(--color-titles);
+    text-shadow: var(--title-shadow);
+    font-size: 25px;
+    font-family: 'Black Ops One', cursive;  */
+  margin-top: 20vh;
+  margin-left: 15%;
+  font-size: 25px;
+  color: var(--color-titles);
+  text-shadow: var(--title-shadow);
+  letter-spacing: 3px;
+  font-family: "Black Ops One", cursive;
+}
+/*Cards de la retrospective ---*/
+
+.profilDigital .content-cards {
+  position: relative;
+  margin-top: 10%;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("./pictures/sol.jpg");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*carte isitech*/
+.profilDigital .content-cards .cardIsitech {
+  background-color: rgb(36, 36, 36);
+  padding-top: 15px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 400px;
+  border-radius: 5px;
+  border: solid 3px rgb(10, 75, 216);
+  box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.671);
+  filter: saturate(0);
+  transition-duration: 1000ms;
+  cursor: default;
+}
+.profilDigital .content-cards .cardIsitech:hover {
+  filter: saturate(1);
+  transform: scale(1.01);
+  transition-duration: 1000ms;
+  color: var(--color-text);
+  box-shadow: none;
+}
+
+.cardIsitech .contenu {
+  text-align: center;
+  font-size: 20px;
+}
+.cardIsitech .contenu .date {
+  padding-top: 15px;
+}
+.cardIsitech .contenu .adresse {
+  padding-top: 15px;
+}
+
+/* carte sncf*/
+.profilDigital .content-cards .cardSncf {
+  background-color: rgb(36, 36, 36);
+  padding-top: 15px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 400px;
+  border-radius: 5px;
+  border: solid 3px rgb(153, 0, 184);
+  box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.671);
+  filter: saturate(0);
+  transition-duration: 1000ms;
+  cursor: default;
+}
+.profilDigital .content-cards .cardSncf:hover {
+  filter: saturate(1);
+  transform: scale(1.01);
+  transition-duration: 1000ms;
+  color: var(--color-text);
+  box-shadow: none;
+}
+
+.cardSncf .contenu {
+  text-align: center;
+  font-size: 20px;
+}
+.cardSncf .contenu .date {
+  padding-top: 15px;
+}
+.cardSncf .contenu .adresse {
+  padding-top: 15px;
+}
+
+/*carte Afpa*/
+.profilDigital .content-cards .cardAfpa {
+  background-color: rgb(36, 36, 36);
+  padding-top: 15px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 400px;
+  border-radius: 5px;
+  border: solid 3px rgb(8, 190, 2);
+  box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.671);
+  filter: saturate(0);
+  transition-duration: 1000ms;
+  cursor: default;
+}
+.profilDigital .content-cards .cardAfpa:hover {
+  filter: saturate(1);
+  transform: scale(1.01);
+  transition-duration: 1000ms;
+  color: var(--color-text);
+  box-shadow: none;
+}
+.cardAfpa .contenu {
+  text-align: center;
+  font-size: 20px;
+}
+.cardAfpa .contenu .date {
+  padding-top: 15px;
+}
+.cardAfpa .contenu .adresse {
+  padding-top: 15px;
+}
+
+/* configuration des images de cartes*/
+.content-cards .cardPicture {
+  width: 220px;
+  height: 190px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*------------Section Technologies--------------*/
+
+.technologies {
+  height: auto;
+  /* padding-bottom: 50vh; */
+}
+
+/* Lignes supérieur gauche à animer en JS*/
+.technologies .lineContentSup {
+  position: relative;
+  top: 0;
+  margin-left: 5%;
+}
+.technologies .lineG {
+  width: 250px;
+  height: 3px;
+  background-color: #f1f1f1f1;
+  border-radius: 5px;
+  margin-left: 0;
+}
+.technologies .lineH {
+  width: 180px;
+  height: 3px;
+  background-color: #f1f1f1f1;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+/*/////////*/
+
+.technologies .content-title {
+  /* margin-top: 20vh;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    font-size: 25px;
+    color: var(--color-titles);
+    text-shadow: var(--title-shadow);
+    font-family: 'Black Ops One', cursive;
+    letter-spacing: 3px; */
+
+  margin-top: 5vh;
+  margin-left: 15%;
+  font-size: 25px;
+  color: var(--color-titles);
+  text-shadow: var(--title-shadow);
+  letter-spacing: 3px;
+  font-family: "Black Ops One", cursive;
+}
+
+/* Container global qui regroupe tous les sous-container*/
+.technologies .containerGlobal {
+  margin-top: 20vh;
+  padding: 50px 0;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /*NOTE : appliquer media queries pour rendu en colonne (a voir)*/
+  background-image: url(./pictures/sol.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/*////////*/
+
+.technologies .containerSecondaire {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+.technologies .containerTitre {
+  text-align: center;
+  font-size: var(--size-link);
+  font-family: "Black Ops One", cursive;
+  color: var(--color-text);
+  text-shadow: var(--title-shadow);
+  margin-top: 20px;
+  /* padding: 10px;
+    margin-left: 50%;
+    margin-bottom: 10px; */
+  /* transform: translateX(-50%); */
+  word-break: break-all;
+  width: auto;
+}
+/*container itemsss */
+.technologies .containerItem {
+  padding: 20px 10px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: rgba(104, 104, 104, 0.493);
+}
+
+/* config différente du container back-end*/
+.technologies .containerTitreBack {
+  /* text-align: center;
+    width: 100%;
+    font-size: var(--size-link);
+    font-family: 'Black Ops One', cursive;
+    color: var(--color-text);
+    text-shadow: var(--title-shadow);
+    padding: 10px;
+    margin-left: 50%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transform: translateX(-50%);
+    word-break: break-all; */
+
+  text-align: center;
+  font-size: var(--size-link);
+  font-family: "Black Ops One", cursive;
+  color: var(--color-text);
+  text-shadow: var(--title-shadow);
+  margin-top: 20px;
+  /* padding: 10px;
+    margin-left: 50%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transform: translateX(-50%); */
+  word-break: break-all;
+}
+
+.technologies .containerItemBack {
+  padding: 20px 50px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: rgba(104, 104, 104, 0.493);
+}
+
+/**----------Container des Outils ---------------*/
+.technologies .containerSecondaire .containerItem .iconBlocks {
+  width: 70px;
+  height: 70px;
+}
+/*-----------------------------Section Portfolio--------------------------------*/
+.portfolio {
+  height: auto;
+  margin-top: 5%;
+}
+.portfolio .lineContentSup {
+  position: relative;
+  top: 0vh;
+  margin-left: 5%;
+}
+.portfolio .lineI {
+  width: 250px;
+  height: 3px;
+  background-color: #f1f1f1f1;
+  border-radius: 5px;
+  margin-left: 0;
+}
+.portfolio .lineJ {
+  width: 180px;
+  height: 3px;
+  background-color: #f1f1f1f1;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+/*/////////*/
+
+.portfolio .content-title {
+  /* margin-top: 20vh;
+    margin-left: 15%;
+    margin-bottom: 100px;
+    font-size: 25px;
+    color: var(--color-titles);
+    text-shadow: var(--title-shadow);
+    font-family: 'Black Ops One', cursive;
+    letter-spacing: 3px; */
+  margin-top: 5vh;
+  margin-left: 15%;
+  font-size: 25px;
+  color: var(--color-titles);
+  text-shadow: var(--title-shadow);
+  letter-spacing: 3px;
+  font-family: "Black Ops One", cursive;
+}
+
+/*-----------Config des cards ccsGrid----------*/
+
+.containerGrid {
+  background-image: url(./pictures/sol.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px 20px;
+  margin-bottom: 10%;
+  margin-top: 20vh;
+  max-width: auto;
+  width: 100%;
+  height: auto;
+  /* margin: 5% auto; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  gap: 30px;
+}
+.card {
+  width: 300px;
+  height: 230px;
+  background: rgba(0, 0, 255, 0.11);
+  border-radius: 10px;
+  border: solid 2px black;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.527);
+  cursor: pointer;
+}
+
+/*-----Config des images cartes-----------*/
+.card .websitePicture {
+  width: 300px;
+  height: 230px;
+  border-radius: 10px;
+}
+
+/*-------------------------Footer-------------------------*/
+
+footer {
+  height: auto;
+  background: rgb(124, 124, 124);
+}
+footer .container-principal {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-text);
+}
+.contact .list-items .item {
+  list-style-type: none;
+  font-size: var(--size-link);
+  margin: 10px 0;
+}
+
+.contact .list-items .item a {
+  text-decoration: none;
+  color: #fff;
+}
+.contact .list-items .item a:hover {
+  text-decoration: none;
+  color: rgb(172, 172, 172);
+}
+
+footer .liensPrincipaux {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  color: var(--color-text);
+  font-size: var(--size-link);
+}
+.liensPrincipaux a {
+  margin: 10px 0;
+  text-decoration: none;
+  color: var(--color-link);
+}
+.liensPrincipaux a:hover {
+  text-decoration: none;
+  color: rgb(172, 172, 172);
+}
+
+footer .containerReseaux {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+}
+footer .containerReseaux a:hover {
+  transform: scale(1.15);
+  transition-duration: 1000ms;
+}
+footer .final {
+  text-align: center;
+}
+
+/*Lignes inférieur droite à animer en JS*/
+
+/* .profilDigital .lineContentInf1{
+    position: absolute;
+    top: 130vh;
+    right: 15%;
+}
+.lineG{
+    width: 180px;
+    height: 3px;
+    background-color: #f1f1f1f1;
+    border-radius: 5px;
+    margin-left: 70px;
+}
+.lineH{
+    width: 250px;
+    height: 3px;
+    background-color: #f1f1f1f1;
+    border-radius: 5px;
+    margin-top: 25px
+} */
